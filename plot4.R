@@ -13,7 +13,7 @@ BothDays<-rbind(D1,D2)
 BothDays$Date<-dmy(BothDays$Date)
 BothDays$Date_Time<- as.POSIXct(paste(BothDays$Date, BothDays$Time), format="%Y-%m-%d %H:%M:%S")
 
-png(file='plot4.png')
+png(file='plot4.png', height = 480, width = 480)
 
 #### Set number of graphs for Figure ####
 par(mfrow=c(2,2))

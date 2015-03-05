@@ -17,7 +17,7 @@ BothDays$Date<-dmy(BothDays$Date)
 BothDays$Date_Time<- as.POSIXct(paste(BothDays$Date, BothDays$Time), format="%Y-%m-%d %H:%M:%S")
 
 # Plot 3 #
-png(file='plot3.png')
+png(file='plot3.png', height = 480, width = 480)
 
 plot(BothDays$Date_Time, BothDays$Sub_metering_1, xlab= '',ylab='Energy sub metering',type='n')
 lines(BothDays$Date_Time, BothDays$Sub_metering_1, col='black')

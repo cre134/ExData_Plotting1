@@ -17,7 +17,7 @@ BothDays$Date<-dmy(BothDays$Date)
 BothDays$Date_Time<- as.POSIXct(paste(BothDays$Date, BothDays$Time), format="%Y-%m-%d %H:%M:%S")
 
 # Plot 2 #
-png(file='plot2.png')
+png(file='plot2.png', height = 480, width = 480)
 
 plot(BothDays$Date_Time, BothDays$Global_active_power, xlab= '',ylab='Global Active Power (kilowatts)',type='n')
 lines(BothDays$Date_Time, BothDays$Global_active_power)

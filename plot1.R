@@ -9,7 +9,7 @@ D2<-filter(data, Date == '2/2/2007')
 BothDays<-rbind(D1,D2)
 
 # Plot 1 #
-png(file='plot1.png')
+png(file='plot1.png', height = 480, width = 480)
 
 hist(BothDays$Global_active_power, col = 'red', xlab='Global Active Power (kilowatts)', main='Global Active Power')
 
